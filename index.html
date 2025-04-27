@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Bake - Freshly Baked Goodness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Perfect Bake</h1>
+                <div class="logo-icon">
+                    <svg width="30" height="30" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" fill="#B57EDC" />
+                        <rect x="30" y="30" width="40" height="10" rx="5" fill="#F28F8F" />
+                        <rect x="25" y="40" width="50" height="10" rx="5" fill="#F28F8F" />
+                        <rect x="20" y="50" width="60" height="10" rx="5" fill="#F28F8F" />
+                        <circle cx="50" cy="25" r="5" fill="#5D3A66" />
+                    </svg>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active"><span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><span>About</span></a></li>
+                <li><a href="#menu" class="nav-link"><span>Menu</span></a></li>
+                <li><a href="#products" class="nav-link"><span>Products</span></a></li>
+                <li><a href="#order" class="nav-link"><span>Place Order</span></a></li>
+                <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+                <li><a href="#reviews" class="nav-link"><span>Reviews</span></a></li>
+                <li><a href="gallery.html" class="nav-link"><span>Gallery</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Perfect Bake</h1>
+            <p class="hero-subtitle">Freshly Baked Goodness, Every Day!</p>
+            <a href="#order" class="btn btn-hero">
+                <span>Order Now</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="hero-scrolldown">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Us</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="100">
+                    <div class="image-wrapper">
+                        <img src="/api/placeholder/600/400" alt="Perfect Bake bakery interior">
+                        <div class="image-overlay">
+                            <div class="image-overlay-content">
+                                <h3>Our Bakery</h3>
+                                <p>Visit us today!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-badge">
+                        <span>Since 2015</span>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+                    <p>At Perfect Bake, baking is more than a craft — it's our passion. Located in the heart of Sector 10, we bring you fresh, handmade delights daily.</p>
+                    <p>Our mission is simple: spread happiness through warm, flavorful treats baked with love. We believe in quality, tradition, and a sprinkle of magic in every bite.</p>
+                    <p>Founded in 2015, our bakery has grown from a small family business to a beloved local institution, while maintaining the same dedication to quality and customer satisfaction.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-bread-slice"></i>
+                            <h4>Fresh Daily</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Premium Quality</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Natural Ingredients</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all">All Items</button>
+                <button class="menu-tab" data-category="cakes">Cakes</button>
+                <button class="menu-tab" data-category="pastries">Pastries</button>
+                <button class="menu-tab" data-category="breads">Breads</button>
+                <button class="menu-tab" data-category="cookies">Cookies</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="cakes" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item-img">
+                        <img src="/api/placeholder/150/150" alt="Chocolate Truffle Cake">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Truffle Cake</h3>
+                        <div class="price">₹799</div>
+                        <p>Rich chocolate layers with smooth ganache</p>
+                        <div class="menu-item-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pastries" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item-img">
+                        <img src="/api/placeholder/150/150" alt="Vanilla Strawberry Pastry">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Vanilla Strawberry Pastry</h3>
+                        <div class="price">₹120</div>
+                        <p>Light vanilla sponge with fresh strawberries</p>
+                        <div class="menu-item-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="breads" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item-img">
+                        <img src="/api/placeholder/150/150" alt="Fresh Multigrain Bread">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fresh Multigrain Bread</h3>
+                        <div class="price">₹80</div>
+                        <p>Nutritious bread with mixed grains</p>
+                        <div class="menu-item-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cookies" data-aos="fade-up" data-aos-delay="400">
+                    <div class="menu-item-img">
+                        <img src="/api/placeholder/150/150" alt="Almond Butter Cookies">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Almond Butter Cookies</h3>
+                        <div class="price">₹250</div>
+                        <p>Per box, buttery cookies with almond bits</p>
+                        <div class="menu-item-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cakes" data-aos="fade-up" data-aos-delay="500">
+                    <div class="menu-item-img">
+                        <img src="/api/placeholder/150/150" alt="Blueberry Cheesecake Slice">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Blueberry Cheesecake Slice</h3>
+                        <div class="price">₹150</div>
+                        <p>Creamy cheesecake with blueberry topping</p>
+                        <div class="menu-item-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pastries" data-aos="fade-up" data-aos-delay="600">
+                    <div class="menu-item-img">
+                        <img src="/api/placeholder/150/150" alt="Classic Croissant">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Classic Croissant</h3>
+                        <div class="price">₹90</div>
+                        <p>Buttery, flaky French pastry</p>
+                        <div class="menu-item-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Signature Chocolate Cake">
+                        <div class="product-tags">
+                            <span class="tag">Bestseller</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Signature Chocolate Cake</h3>
+                        <p>Rich, moist, and indulgent — a true showstopper for celebrations.</p>
+                        <div class="product-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Creamy Red Velvet Cupcakes">
+                        <div class="product-tags">
+                            <span class="tag">New</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Creamy Red Velvet Cupcakes</h3>
+                        <p>Soft cupcakes topped with smooth cream cheese frosting.</p>
+                        <div class="product-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Rustic Baguette Bread">
+                    </div>
+                    <div class="product-content">
+                        <h3>Rustic Baguette Bread</h3>
+                        <p>Handmade using traditional French techniques, perfect for sandwiches.</p>
+                        <div class="product-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Oatmeal Raisin Cookies">
+                    </div>
+                    <div class="product-content">
+                        <h3>Oatmeal Raisin Cookies</h3>
+                        <p>Wholesome, chewy, and packed with raisins for natural sweetness.</p>
+                        <div class="product-hover">
+                            <a href="#order" class="btn-small">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more" data-aos="fade-up">
+                <a href="gallery.html" class="btn btn-with-icon">
+                    <span>View Gallery</span>
+                    <i class="fas fa-images"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Place an Order</h2>
+            <p class="order-info" data-aos="fade-up" data-aos-delay="100">Simply fill in your Name, Email, and Order Details! We'll confirm your order within 24 hours. Minimum lead time for large custom cakes is 48 hours.</p>
+            <form id="order-form" class="order-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone (Optional)</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="order-details">Order Details</label>
+                    <div class="input-with-icon textarea-icon">
+                        <i class="fas fa-list"></i>
+                        <textarea id="order-details" name="order-details" rows="5" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-with-icon">
+                    <span>Submit Order</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <div class="form-success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Thank you for your order! We will get back to you shortly.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91-9876543210</p>
+                                <a href="tel:+919876543210" class="contact-link">Call Now</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@perfectbake.com</p>
+                                <a href="mailto:hello@perfectbake.com" class="contact-link">Send Email</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Sector 10, Near Central Park, Your City</p>
+                                <a href="https://maps.google.com" target="_blank" class="contact-link">Get Directions</a>
+                            </div>
+                        </div>
+                        <div class="contact-hours">
+                            <h3>Opening Hours</h3>
+                            <div class="hours-grid">
+                                <div class="day">Monday - Friday</div>
+                                <div class="time">8:00 AM - 8:00 PM</div>
+                                <div class="day">Saturday</div>
+                                <div class="time">8:00 AM - 6:00 PM</div>
+                                <div class="day">Sunday</div>
+                                <div class="time">9:00 AM - 5:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container" data-aos="fade-left" data-aos-delay="200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2233913121413!2d77.1!3d28.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMwJzAwLjAiTiA3N8KwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1651825200000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What Our Customers Say</h2>
+            <div class="testimonials-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Absolutely delicious cakes! The Chocolate Truffle is a must-try. The texture is perfect and the flavor is rich without being overwhelming."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="/api/placeholder/50/50" alt="Aarav S.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Aarav S.</h4>
+                                <p>Regular Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Super fresh pastries and breads, and the staff is so warm! I visit every weekend to get my bread supply for the week."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="/api/placeholder/50/50" alt="Meera K.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Meera K.</h4>
+                                <p>Weekly Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Best bakery in town! I ordered a custom birthday cake, and it was perfect. Everyone at the party was impressed with both the look and taste."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="/api/placeholder/50/50" alt="Rajesh V.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Rajesh V.</h4>
+                                <p>Ordered Custom Cake</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Love the cozy atmosphere and the fresh smell of bread baking! It's my favorite place to work remotely while enjoying their pastries."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="/api/placeholder/50/50" alt="Simran P.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Simran P.</h4>
+                                <p>Regular Visitor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button id="prev-testimonial" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button id="next-testimonial" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="review-cta" data-aos="fade-up" data-aos-delay="200">
+                <h3>Enjoyed our products?</h3>
+                <p>Share your experience and help us improve!</p>
+                <button class="btn btn-with-icon open-review-form">
+                    <span>Write a Review</span>
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter section-padding">
+        <div class="container">
+            <div class="newsletter-content" data-aos="zoom-in">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on new products, special offers, and baking tips!</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Perfect Bake</h2>
+                    <p>Freshly Baked Goodness, Every Day!</p>
+                    <div class="footer-cake-icon">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" fill="#B57EDC" />
+                            <rect x="30" y="30" width="40" height="10" rx="5" fill="#F28F8F" />
+                            <rect x="25" y="40" width="50" height="10" rx="5" fill="#F28F8F" />
+                            <rect x="20" y="50" width="60" height="10" rx="5" fill="#F28F8F" />
+                            <circle cx="50" cy="25" r="5" fill="#5D3A66" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#order">Place Order</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91-9876543210</p>
+                    <p><i class="fas fa-envelope"></i> hello@perfectbake.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sector 10, Near Central Park, Your City</p>
+                </div>
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Perfect Bake. All Rights Reserved.</p>
+                <div class="footer-policy-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
